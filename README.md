@@ -30,8 +30,13 @@ local Window = Rayfield:CreateWindow({
         Key = "TopVisual"
     }
 })
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_SetTargetBulk"):FireServer(unpack(args))
 
-
+Names = {}
+-- Notifying Functions
+local v2 = require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library"));
+local Network = game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Pets_SetTargetBulk"):FireServer(unpack(args))
+local singstop
 
 -- Titanics
 
