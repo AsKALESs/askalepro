@@ -32,11 +32,6 @@ local Window = Rayfield:CreateWindow({
 })
 
 
-Names = {}
--- Notifying Functions
-local v2 = require(game.ReplicatedStorage:WaitForChild("Framework"):WaitForChild("Library"));
-local Network = require(game:GetService("ReplicatedStorage").Library.Client.Network).Invoke
-local singstop
 
 -- Titanics
 
